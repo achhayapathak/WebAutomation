@@ -2,6 +2,14 @@
 
 This project demonstrates basic automation using Puppeteer library to perform user actions on a website.
 
+## Table of Contents
+
+- [Description](#description)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contact](#contact)
+
 ## Description
 
 The task involves automating user actions on the [swap.defillama.com](https://swap.defillama.com) website using Puppeteer library. The program launches a headful browser, fills out a form on the website, and performs various actions using Puppeteer.
@@ -51,5 +59,6 @@ To run this program, you need to have the following software installed:
 
 3. You can observe the automated actions in the browser window.
 
+## Contact
 
 For any further questions or issues, please contact me at [achhayapathak11@gmail.com](mailto:achhayapathak11@gmail.com).
