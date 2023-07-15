@@ -6,7 +6,6 @@ async function runAutomation() {
     await page.goto('https://swap.defillama.com'); // Go to the website
     await new Promise(r => setTimeout(r, 3000));
 
-    
     // Fill out the form
 
     // Select Chain
@@ -18,6 +17,7 @@ async function runAutomation() {
     await page.keyboard.press('Enter'); // Press the Enter key to confirm the selection
     await new Promise(r => setTimeout(r, 3000));
 
+
     // To clear the existing 10 value in "You Sell" text input
     await page.click('.css-79elbk input', {clickCount: 3})
     await new Promise(r => setTimeout(r, 1000));
@@ -25,16 +25,13 @@ async function runAutomation() {
     await page.type('.css-79elbk input', '12')
     await new Promise(r => setTimeout(r, 3000));
 
-    // Selecting First Token
+    
+    // Selecting WBTC in You Sell Menu
     await page.click('button.css-qjhap'); // Click the button to open the search bar
-    await new Promise(r => setTimeout(r, 1000));
-    await page.waitForSelector('.chakra-text.css-sys4p8'); // Wait for the search bar to appear
     await page.type('.chakra-text.css-sys4p8', 'WBTC'); // Type "WBTC" in the search bar
-
-    // Wait for the list to appear
-    await page.waitForSelector('.List');
-
-
+    await new Promise(r => setTimeout(r, 1000));
+    await page.click(".jUxgJZ");
+    await page.click(".cjxQGj");
 
 
 }
